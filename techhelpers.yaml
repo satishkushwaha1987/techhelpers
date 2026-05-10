@@ -56,7 +56,7 @@ jobs:
             ./ \
             ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/html/techhelpers
 
-      # Restart nginx
+      # Restart server nginx
       - name: Restart Nginx
         run: |
           ssh -i ~/.ssh/id_rsa \
